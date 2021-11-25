@@ -12,10 +12,10 @@ class QueryBuilder
   {
   }
 
-  public function selectAll(string $table, string $intoTable)
+  public function selectAll(string $table)
   {
     $statement = $this->pdo->prepare("select * from {$table}");
     $statement->execute();
-    return $statement->fetchAll(PDO::FETCH_CLASS, $intoTable);
+    return $statement->fetchAll(PDO::FETCH_CLASS);
   }
 }
