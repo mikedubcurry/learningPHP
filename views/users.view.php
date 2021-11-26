@@ -1,8 +1,8 @@
 <?php include('partials/head.php') ?>
 
-<h1>Home Page</h1>
-<!-- <h1>Submit your name</h1>
-<form action="/names" method="post">
+<h1>All Users</h1>
+<h1>Submit your name</h1>
+<form action="/users" method="post">
     <label for="name">Name: </label>
     <input required type="text" id="name" name="name">
 
@@ -15,6 +15,6 @@
         <li><?= $user->name ?></li>
 
     <?php endforeach ?>
-</ul> -->
+</ul>
 
 <?php include('partials/footer.php') ?>
