@@ -1,6 +1,6 @@
 <?php
 
-
+use App\Core\App;
 
 App::bind('config', require 'config.php');
 
@@ -18,5 +18,5 @@ function redirect($path)
 function view($viewName, $data = [])
 {
   extract($data);
-  return require "views/{$viewName}.view.php";
+  return require "app/views/{$viewName}.view.php";
 }
